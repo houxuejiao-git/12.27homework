@@ -1,0 +1,330 @@
+#root{
+  width: 100%;
+  height: 100%;
+}
+.App {
+  width: 100%;
+  height: 100%;
+}
+.home{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.24rem;
+  background: #f0efed;
+}
+header{
+  width: 100%;
+  height: 1rem;
+  background: #ffcd00;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0;
+  box-sizing: border-box;
+  color:#34301f ;
+}
+.headerLeft{
+  width: 1.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.3rem;
+}
+.headerCustomer{
+  width: 1rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.4rem;
+}
+.headerInput{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.search{
+  width: 100%;
+  height: 0.48rem;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, .5);
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;  
+}
+.inputIcon{
+  width: 0.8rem;
+  height: 100%;
+  background: rgba(255, 255, 255, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d3ceba;
+  font-size: 0.5rem;
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;  
+}
+section{
+  flex: 1;
+  overflow: auto;
+}
+.banner{
+  width: 100%;
+  padding: 0.2rem 0.3rem;
+  box-sizing: border-box;
+  background:black ;
+  color: white;
+  display: flex;
+}
+.bannerLeft{
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 15%;
+  background: #ffda00;
+  color: black;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.28rem;
+}
+.bannerRight{
+  width: 1.1rem;
+  height: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.15rem;
+  font-size: 0.28rem;
+  background: #ffda00;
+  color: black;
+}
+.bannerFont{
+  flex: 1;
+  padding-left: 0.2rem;
+  
+}
+nav{
+  width: 100%;
+  background: white;
+  padding:0.2rem ;
+  box-sizing: border-box;
+}
+.navList{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.navList li{
+  width: 20%;
+  padding-bottom:0.3rem ;
+  box-sizing: border-box;
+}
+.navList li a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navList li a img{
+  width: 0.84rem;
+  height: auto;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.infoBox{
+  width: 100%;
+  flex: 1;
+  margin-top: 0.2rem;
+  background: white;
+}
+.tit{
+  width: 100%;
+  padding:0.2rem 0.16rem ;
+  box-sizing: border-box;
+  font-size: 0.32rem;
+}
+.info{
+  width: 100%;
+  height: 100%;
+}
+.infoInfo{
+  width: 100%;
+  padding:0.2rem ;
+  box-sizing: border-box;
+  border:  1px solid #f7f6f3;
+  border-left: none;
+  border-right: none;
+  display: flex;
+}
+.infoImg{
+  width:1.8rem ;
+}
+.infoImg img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.msgInfo{
+  flex: 1;
+  padding-left: 0.2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.name{
+  font-size:0.3rem ;
+}
+.msg{
+  color: #6d6d6d;
+}
+.priceBox{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price{
+  color:#ff893b ;
+  font-size: 0.3rem;
+  margin-right: 0.1rem;
+}
+.food{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #efefef;
+}
+.foodHeader{
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  background: url("/img/background.jpg")no-repeat;
+  background-size: 100% 100%;
+  padding:0.16rem 0;
+  box-sizing: border-box;
+}
+.returnBox{
+  width: 0.9rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #1ec6b5;
+  font-size: 0.4rem;
+  font-weight: 900;
+  color: white;
+}
+.personBox{
+  width: 0.9rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #1ec6b5;
+  font-size: 0.4rem;
+  font-weight: 900;
+  color: white;
+}
+.findBox{
+  flex: 1;
+  display: flex;
+}
+.findIcon{
+  width: 1rem;
+  height: 0.5rem;
+  background:#ebeced ;
+  color:#8f8f95 ;
+  text-align: right;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.findInput{
+  width: 100%;
+  height: 0.5rem;
+  border: none;
+  outline: none;
+  background: #ebeced;
+  color: #8f8f95;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+.foodSction{
+  flex: 1;
+  overflow: auto;
+}
+.foodNav{
+  width: 100%;
+  background: white;
+  margin-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+.foodNavBox{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.28rem;
+}
+.foodNavBox img{
+  width: 0.8rem;
+  height: auto;
+  display: block;
+  margin-bottom: 0.1rem;
+}
+.foodMsgBox{
+  width: 100%;
+  background: white;
+}
+.foodMsgList{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.foodMsgList li{
+  padding:0.2rem 0 ;
+  box-sizing: border-box;
+}
+.foodsShopBox{
+  width: 100%;
+}
+.shopBox{
+  width: 100%;
+  border: 1px solid #efefef;
+  border-left: none;
+  border-right: none;
+  padding:0.2rem 0.3rem 0.2rem ;
+  box-sizing: border-box;
+}
+.shopInfo{
+  width: 100%;
+  display: flex;
+}
+.shopImg{
+  width: 1.36rem;
+}
+.shopImg img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.msgShop{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.shopMsg{
+  flex: 1;
+  border-bottom: 1px solid #f4f4f4;
+  padding-left: 0.2rem;
+  box-sizing: border-box;
+}
