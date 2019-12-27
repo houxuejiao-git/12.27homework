@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import FoodsInfo from './FoodsInfo'
+import { NavLink } from 'react-router-dom'
 export default class view extends Component {
     state={
         newdata:[{
@@ -31,11 +32,13 @@ export default class view extends Component {
         var scrollTop = document.getElementsByClassName("foodSction")[0].scrollTop
         var left = document.getElementsByClassName("returnBox")[0]
         var right = document.getElementsByClassName("personBox")[0]
-        if(scrollTop>100){
+        var btn = document.getElementsByClassName("posBtn")[0]
+        if(scrollTop>150){
             head.style.background = "white"
             head.style.height= "0.7rem"
             left.style.color = "#19b99d"
             right.style.color = "#19b99d"
+            btn.style.display = "flex"
         }else{
             // head.style.background = "url('/img/background.jpg')no-repeat"
             // // head.style.height= "2rem"
@@ -45,6 +48,15 @@ export default class view extends Component {
         }
         // console.log(scrollTop)
     }
+    returnTop = ()=>{
+        console.log(1)
+        var box = document.getElementsByClassName("foodSction")[0]
+        box.scrollTo({
+            left:0,
+            top:0,
+            behavior:"smooth"
+        })
+    }
     componentDidMount(){
         this.props.fetchFoods()
     }
@@ -53,9 +65,14 @@ export default class view extends Component {
         let { data } = this.props
         return (
             <div className="food">
+            <div className="posBtn" onClick={this.returnTop}>
+                <i className="iconfont icon-xiangshang"></i>
+            </div>
                 <div className="foodHeader">
                     <div className="returnBox">
+                        <NavLink to="/Home">
                         <i className="iconfont icon-fanhui"></i>
+                        </NavLink>
                     </div>
                     <div className="findBox">
                         <p className="findIcon">

@@ -23,7 +23,9 @@ export default class view extends Component {
                                         <p style={{color:"#19b99d"}}>{v.out}</p>
                                     </div>
                                 </div>
-                                <div className="saleBox"></div>
+                                <div className="saleBox">
+                                    <img src="img/t1.jpg" alt=""/>&nbsp;&nbsp;93代100元
+                                </div>
                             </div>
                         )
                     })  :null
